@@ -124,6 +124,9 @@ set status on
 set status-position "$(opt @beacon-position bottom)"
 set status-justify left
 set status-style "bg=$BG,fg=$DIM"
+# Reset the styles a previous theme may have left behind.
+set status-left-style default
+set status-right-style default
 set status-left "$left"
 set status-left-length 60
 set status-right "$right"
@@ -137,6 +140,8 @@ setw window-status-format "$win_off"
 setw window-status-current-format "$win_on"
 setw window-status-separator ''
 setw window-status-style "bg=$BG"
+setw window-status-current-style default
+setw window-status-last-style default
 setw window-status-activity-style none
 setw window-status-bell-style none
 setw pane-border-style "fg=$BORDER"
