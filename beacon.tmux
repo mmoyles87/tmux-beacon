@@ -84,7 +84,8 @@ pill() {
 }
 
 # Left: host badge, then session.
-left="$(pill "$A" "$INK" "${icon:+$icon }$(opt @beacon-label '#{host_short}')")"
+label=$(opt "@beacon-label-$host" "$(opt @beacon-label '#{host_short}')")
+left="$(pill "$A" "$INK" "${icon:+$icon }$label")"
 [ "$style" = flat ] || left="$left "
 left="$left$(pill "$CHIP" "$A" '#S') "
 

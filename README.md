@@ -77,6 +77,7 @@ set -g @beacon-style 'flat'
 | `@beacon-accent` | hashed from hostname | Accent for any host without its own entry |
 | `@beacon-style` | `rounded` | `rounded` or `flat` |
 | `@beacon-label` | `#{host_short}` | Text in the host badge |
+| `@beacon-label-<name>` | | Badge text for one host, for a box whose hostname isn't what you call it |
 | `@beacon-icon` | `󰒋` (rounded), none (flat) | Glyph before the label; `''` for none |
 | `@beacon-position` | `bottom` | `top` or `bottom` |
 | `@beacon-show-path` | `on` | Show the pane's working directory |
